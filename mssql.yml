@@ -1,0 +1,7 @@
+---
+- name: MSSQL INSTALLATION
+  hosts: mssql_server
+  ignore_errors: true
+  ignore_unreachable: true
+  roles:
+    - mssql-installation

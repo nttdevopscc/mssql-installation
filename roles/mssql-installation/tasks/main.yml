@@ -1,0 +1,9 @@
+---
+- name: MSSQL Installation
+  include_tasks: "{{ mssql_rule_item }}"
+  loop:
+    - rules/pre_check.yml
+    - rules/install_sql.yml
+    - rules/firewall_configuration.yml
+  loop_control:
+    loop_var: mssql_rule_item
