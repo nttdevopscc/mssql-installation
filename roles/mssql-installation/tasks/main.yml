@@ -1,4 +1,7 @@
 ---
+- name: Import vault vars
+  include_vars: vault.yml
+  
 - name: MSSQL Installation
   include_tasks: "{{ mssql_rule_item }}"
   loop:
