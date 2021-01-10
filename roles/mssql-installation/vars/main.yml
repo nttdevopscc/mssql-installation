@@ -2,8 +2,8 @@
 # Using basic authentication because we're using a local account.
 #ansible_user: "nttmyadmin@NTTAPDEMO.COM"
 #ansible_password: "{{ vault_ansible_password_windows }}"
-ansible_winrm_transport: kerberos
-#ansible_winrm_transport: ntlm
+#ansible_winrm_transport: kerberos
+ansible_winrm_transport: ntlm
 ansible_port: 5986
 ansible_connection: winrm
 
