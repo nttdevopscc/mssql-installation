@@ -1,13 +1,13 @@
 windows_domain: nttapdemo.com
 windows_domain_admin: "nttmyadmin"
-#windows_domain_admin_password: "{{ vault_windows_domain_admin_password }}"
-windows_domain_admin_password: "SDNlab123#@!"
+windows_domain_admin_password: "{{ vault_windows_domain_admin_password }}"
+#windows_domain_admin_password: "SDNlab123#@!"
 
 # Setup some base values for connectivity to windows hosts
 # Using basic authentication because we're using a local account.
 ansible_user: "nttmyadmin@NTTAPDEMO.COM"
-ansible_password: "SDNlab123#@!"
-#ansible_password: "{{ vault_ansible_password_windows }}"
+#ansible_password: "SDNlab123#@!"
+ansible_password: "{{ vault_ansible_password_windows }}"
 ansible_winrm_transport: kerberos
 #ansible_winrm_transport: ntlm
 ansible_port: 5986
