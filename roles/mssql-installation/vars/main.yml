@@ -1,6 +1,7 @@
 windows_domain: nttapdemo.com
 windows_domain_admin: "nttmyadmin"
-windows_domain_admin_password: "{{ vault_windows_domain_admin_password }}"
+#windows_domain_admin_password: "{{ vault_windows_domain_admin_password }}"
+windows_domain_admin_password: "SDNlab123#@!"
 
 # Setup some base values for connectivity to windows hosts
 # Using basic authentication because we're using a local account.
